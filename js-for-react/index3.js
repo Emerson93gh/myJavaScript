@@ -1,7 +1,12 @@
+const backgroud = 'red';
+const color = 'white';
+
+const isAuthorized = false;
+
 const button = document.createElement("button");
 button.innerText = "Click me";
-
-const isAuthorized = true;
+// string literals
+button.style = `background: ${isAuthorized ? backgroud : 'blue'}; color: ${color};`;
 
 button.addEventListener("click", () => {
   if (isAuthorized) {
