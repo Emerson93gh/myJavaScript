@@ -35,7 +35,26 @@ const newArray2 = names.filter(function (name) {
 })
 console.log(newArray2);
 
-// concatenar dos arreglos
+// concatenar dos arreglos, utilizando concat
 const newNames = ['Andrew', 'Michael', 'Clark'];
 
-console.log(names.concat(newNames));
+//console.log(names.concat(newNames));
+
+// spread operator, (similar a concat)
+console.log([...names, ...newNames]);
+
+// spread operator con objetos
+const user = {
+    name: 'Liz',
+    lastame: 'Mendez',
+}
+const address = {
+    street: 'main st 123',
+    city: 'miami',
+}
+
+const userInfo = {
+    ...user,
+    ...address,
+}
+console.log(userInfo);
